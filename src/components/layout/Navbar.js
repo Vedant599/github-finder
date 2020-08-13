@@ -5,9 +5,12 @@ import { Link } from 'react-router-dom';
 const Navbar = ({ logo, title }) => {
   return (
     <nav className='navbar bg-primary'>
-      <h1>
-        <i className={logo}></i> {title}
-      </h1>
+      <Link to='/'>
+        <h1>
+          <i className={logo}></i> {title}
+        </h1>
+      </Link>
+
       <ul>
         <li>
           <Link to='/'>Home</Link>
